@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
-  styleUrls: ['./child.component.css']
+  styles: ['h2 { color: pink }'],
+  styleUrls: ['./child.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ChildComponent implements OnInit {
-  message = 'message from child!';
-
+  
   constructor() { }
 
   ngOnInit(): void { }

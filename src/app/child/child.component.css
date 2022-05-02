@@ -1,0 +1,18 @@
+@import '../../assets/external-style.css';
+
+h2 {
+    color: red;
+}
+
+:host {
+    display: block;
+    border: 3px solid red;
+} /* esto no me va */
+
+:host(.active) {
+    border: 1px solid green;
+} /* esto no me va */
+
+:host-context(.theme-light) h2 {
+    background-color:#eef;
+} /* esto no me va */
