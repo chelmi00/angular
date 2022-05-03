@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class GreetingsPipePipe implements PipeTransform {
 
-  transform(value: string, ...args: unknown[]): string {
-    return `Hello ${value}`;
+  transform(value: unknown, ...args: unknown[]): unknown {
+    return null;
   }
 
 }

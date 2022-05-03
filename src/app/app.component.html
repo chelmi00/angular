@@ -1,5 +1,12 @@
-{{todaysDate | date : 'EEEE MMMM d y'|uppercase}}<br>
+<img title="img" src="{{itemImageUrl}}">
+<img title="img" [src]="itemImageUrl">
 
-{{todaysDate | date : 'long'}}<br>
+<table>
+    <tr>
+        <td [colSpan]="3-4">Three-Four</td>
+    </tr>
+</table>
 
-{{'World' | greetingsPipe}}
+<button [disabled]="isUnchanged">Disabled Button</button><br>
+
+
