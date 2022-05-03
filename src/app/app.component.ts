@@ -5,4 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent { }
+export class AppComponent {
+  showText = false;
+
+  toggleText(event: any): void {
+    this.showText = !this.showText;
+    console.log(event);
+  }
+}
