@@ -1,2 +1,5 @@
-<button (click)="toggleText($event)">Toggle text</button>
-{{showText}}
+{{todaysDate | date : 'EEEE MMMM d y'|uppercase}}<br>
+
+{{todaysDate | date : 'long'}}<br>
+
+{{'World' | greetingsPipe}}
